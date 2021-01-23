@@ -1,11 +1,140 @@
-html {
-    box-sizing: border-box;
+@import "vars";
+@import "global";
+@import "fonts";
+
+.header__top {
+    background-color: #eef1f3;
 }
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-.box {
+.header__top-inner {
     display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__box {
+    display: flex;
+    align-items: center;
+}
+.header__top-link {
+    a {
+        color: #ffffff;
+        font-size: 14px;
+        background-color: #0674ec;
+        border-radius: 18px;
+        padding: 13px 18px;
+        margin-right: 50px;
+    }
+}
+.notification {
+    font-size: 20px;
+    color: #7e8fa1;
+    span {
+        background-color: #ff6a6c;
+    }
+}
+.message {
+    font-size: 20px;
+    color: #7e8fa1;
+    span {
+        background-color: #62d03b;
+    }
+}
+.basket {
+    font-size: 20px;
+    color: #7e8fa1;
+    span {
+        background-color: #0674ec;
+    }
+}
+.user__inner {
+    display: flex;
+}
+.user__images {
+    border-radius: 50%;
+    margin-right: 22px;
+    margin-left: 15px;
+}
+.user__name {
+    @include f500;
+    color: #333333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.user__price {
+    color: #0674ec;
+    font-size: 15px;
+}
+.header__circle {
+    position: relative;
+    span {
+        width: 22px;
+        height: 22px;
+        color: #ffffff;
+        border-radius: 50%;
+        font-size: 14px;
+        position: absolute;
+        top: -16px;
+        right: -14px;
+        text-align: center;
+        line-height: 20px;
+    }
+}
+.notification__box .header__circle span {
+    width: 26px;
+}
+.notification__box,
+.message__box,
+.basket__box {
+    margin-right: 33px;
+}
+.header__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.menu__list {
+    li {
+        display: inline-block;
+        & + li {
+            margin-left: 30px;
+        }
+    }
+    a {
+        text-transform: uppercase;
+        font-size: 15px;
+        @include f500;
+        color: #333333;
+    }
+}
+.search__inner {
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+    input {
+        max-width: 360px;
+        display: block;
+        width: 100%;
+        border-radius: 23px;
+        border: 1px solid #d9dfe5;
+        outline: none;
+        height: 46px;
+        padding-left: 25px;
+        padding-right: 75px;
+        & ::placeholder {
+            font-size: 15px;
+            color: #898f96;
+        }
+    }
+    button {
+        position: absolute;
+        border: none;
+        top: 0;
+        right: 0;
+        background-color: #0674ec;
+        width: 70px;
+        height: 46px;
+        border-radius: 23px;
+        color: #fff;
+    }
 }

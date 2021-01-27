@@ -19,9 +19,16 @@ li {
 body {
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
+    font-size: 16px;
+    color: #555555;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.title-product {
+    color: #000000;
+    font-size: 30px;
+    line-height: 28px;
 }

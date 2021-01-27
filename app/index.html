@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -20,7 +21,6 @@
                             <img src="images/logo.png" alt="">
                         </a>
                     </div>
-
                     <div class="header__box">
                         <div class="header__top-link">
                             <a href="#">Become a Seller</a>
@@ -135,12 +135,234 @@
             </div>
         </div>
     </section>
+    <section class="week">
+        <div class="container">
+            <div class="week__inner">
+                <div class="title-product week__title">Weekly Featured Products</div>
+                <div class="week__arrows">
+                    <span class="week__arrows-left lnr "></span>
+                    <span class="week__arrows-right lnr "></span>
+                </div>
+            </div>
+            <div class="week__content">
+                <div class="week__item">
+                    <div class="week__item-bg"></div>
+                    <div class="week__item-box">
+                        <div class="week__item-title">One Page Resume Template</div>
+                        <span class="week__item-author">AazzTech</span>
+                        <span class="week__item-category">WordPress</span>
+                        <div class="week__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                            ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                            Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                            scelerisque.</div>
+                        <div class="week__item-tag-inner">
+                            <span class="week__item-tag">website</span>
+                            <span class="week__item-tag">plugin</span>
+                            <span class="week__item-tag">landing page</span>
+                        </div>
+                        <div class="week__item-line"></div>
+                        <div class="week__item-bottom">
+                            <div class="week__item-inner">
+                                <a class="week__item-btn" href="#">$10 - $50</a>
+                                <span class="week__item-heart lnr">46</span>
+                                <span class="week__item-cart lnr">634</span>
+                            </div>
+                            <div class="rate-star"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="release">
+        <div class="container">
+            <div class="release__title-inner">
+                <div class="release__title title-product">
+                    Newest Release Products
+                </div>
+                <div class="release__title-decor">
+                    Filter by:
+                </div>
+            </div>
+            <div class="release__btn-inner">
+                <button type="button" data-filter=".category-plugins">Plugins</button>
+                <button type="button" data-filter=".category-wordpress">WordPress</button>
+                <button type="button" data-filter=".category-sitetemplate">Site Template</button>
+                <button type="button" data-filter=".category-psdtemplate">PSD Template</button>
+                <button type="button" data-filter=".category-joomla">Joomla</button>
+                <button type="button" data-filter=".category-userinterface">User Interface</button>
+                <button type="button" data-filter=".category-landingpage">Landing Page</button>
+                <button type="button" data-filter=".category-software">Software</button>
+            </div>
+            <div class="release__items">
+                <div class="release__item mix category-plugins category-landingpage" data-order="1">
+                    <div class="release__item-inner">
+                        <div class="release__item-bg">
+                            <a href="#">More Info</a>
+                            <a href="#">Live Demo</a>
+                        </div>
+                        <div class="release__item-wrapper">
+                            <div class="release__item-title">E-commerce Shopping Cart</div>
+                            <span class="release__item-author">Theme-Valley</span>
+                            <span class="release__item-category">Plugin</span>
+                            <div class="release__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</div>
+                        </div>
+                        <div class="release__item-line"></div>
+                        <div class="release__item-box">
+                            <div>
+                                <a class="release__item-price" href="#"><span>$20</span></a>
+                                <span class="release__item-heart lnr">90</span>
+                            </div>
+                            <span class="release__item-cart lnr">246</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="release__item mix category-wordpress category-software" data-order="2">
+                    <div class="release__item-inner">
+                        <div class="release__item-bg release__item-bg--color">
+                            <a href="#">More Info</a>
+                            <a href="#">Live Demo</a>
+                        </div>
+                        <div class="release__item-wrapper">
+                            <div class="release__item-title">Marketify Coffee Shop</div>
+                            <span class="release__item-author">EchoTheme</span>
+                            <span class="release__item-category release__item-category--psd">PSD</span>
+                            <div class="release__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</div>
+                        </div>
+                        <div class="release__item-line"></div>
+                        <div class="release__item-box">
+                            <div>
+                                <a class="release__item-price" href="#"><span>$18 </span></a>
+                                <span class="release__item-heart lnr">48</span>
+                            </div>
+                            <span class="release__item-cart lnr">50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="release__item mix category-sitetemplate" data-order="3">
+                    <div class="release__item-inner">
+                        <div class="release__item-bg">
+                            <a href="#">More Info</a>
+                            <a href="#">Live Demo</a>
+                        </div>
+                        <div class="release__item-wrapper">
+                            <div class="release__item-title">Bryson - Portfolio Template</div>
+                            <span class="release__item-author">Artcorner</span>
+                            <span class="release__item-category release__item-category--html">HTML</span>
+                            <div class="release__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</div>
+                        </div>
+                        <div class="release__item-line"></div>
+                        <div class="release__item-box">
+                            <div>
+                                <a class="release__item-price" href="#"><span>$10</span></a>
+                                <span class="release__item-heart lnr">56</span>
+                                <div class="rate-star"></div>
+                            </div>
+                            <span class="release__item-cart lnr">68</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="release__item mix category-psdtemplate" data-order="4">
+                    <div class="release__item-inner">
+                        <div class="release__item-bg">
+                            <a href="#">More Info</a>
+                            <a href="#">Live Demo</a>
+                        </div>
+                        <div class="release__item-wrapper">
+                            <div class="release__item-title">E-commerce Shopping Cart</div>
+                            <span class="release__item-author">Design-Hub</span>
+                            <span class="release__item-category">Plugin</span>
+                            <div class="release__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</div>
+                        </div>
+                        <div class="release__item-line"></div>
+                        <div class="release__item-box">
+                            <div>
+                                <a class="release__item-price" href="#"><span>$10 - 50</span></a>
+                                <span class="release__item-heart lnr">90</span>
+                                <div class="rate-star"></div>
+                            </div>
+                            <span class="release__item-cart lnr">45</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="release__item mix category-joomla" data-order="5">
+                    <div class="release__item-inner">
+                        <div class="release__item-bg release__item-bg--color">
+                            <a href="#">More Info</a>
+                            <a href="#">Live Demo</a>
+                        </div>
+                        <div class="release__item-wrapper">
+                            <div class="release__item-title">E-commerce Shopping Cart</div>
+                            <span class="release__item-author">TAazzTech</span>
+                            <span class="release__item-category release__item-category--psd">Plugin</span>
+                            <div class="release__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</div>
+                        </div>
+                        <div class="release__item-line"></div>
+                        <div class="release__item-box">
+                            <div>
+                                <a class="release__item-price" href="#"><span>$10 - 50 </span></a>
+                                <span class="release__item-heart lnr">48</span>
+                            </div>
+                            <span class="release__item-cart lnr">50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="release__item mix category-userinterface" data-order="6">
+                    <div class="release__item-inner">
+                        <div class="release__item-bg">
+                            <a href="#">More Info</a>
+                            <a href="#">Live Demo</a>
+                        </div>
+                        <div class="release__item-wrapper">
+                            <div class="release__item-title">Bryson - Portfolio Template</div>
+                            <span class="release__item-author">Coder-Lab</span>
+                            <span class=" release__item-category release__item-category--html">HTML</span>
+                            <div class="release__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                                justo
+                                ut scelerisque
+                                the mattis, leo quam aliquet congue.</div>
+                        </div>
+                        <div class="release__item-line"></div>
+                        <div class="release__item-box">
+                            <div>
+                                <a class="release__item-price" href="#"><span>$10</span></a>
+                                <span class="release__item-heart lnr">56</span>
+                                <div class="rate-star"></div>
+                            </div>
+                            <span class="release__item-cart lnr">68</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="release__link-inner">
+                <button type="button" class="release__link" data-filter="all">All New
+                    Products
+                </button>
+            </div>
+    </section>
+
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

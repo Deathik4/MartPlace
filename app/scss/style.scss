@@ -794,3 +794,73 @@
 .follower__items {
     min-width: 0;
 }
+//end follower
+//start statistics
+.statistics {
+    background-color: #0d0f13;
+    opacity: 0.8;
+    padding: 95px 0;
+}
+.statistics__inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.statistics__item-num {
+    font-size: 36px;
+    margin-bottom: 18px;
+    &--yellow {
+        color: #feb71d;
+        position: relative;
+        padding-top: 93px;
+        &::before {
+            content: "\e84c";
+            position: absolute;
+            top: 0;
+            font-size: 48px;
+            left: 28px;
+        }
+    }
+    &--blue {
+        color: #58c9e9;
+        padding-top: 87px;
+        position: relative;
+        &::before {
+            content: "\e80b";
+            font-size: 48px;
+            position: absolute;
+            top: 0;
+            left: 20px;
+        }
+    }
+    &--green {
+        color: #77de51;
+        padding-top: 94px;
+        position: relative;
+        &::before {
+            content: "\e854";
+            position: absolute;
+            top: 0;
+            left: 46px;
+            font-size: 48px;
+        }
+    }
+    &--red {
+        color: #ff6a6d;
+        position: relative;
+        padding-top: 89px;
+        &::before {
+            content: "\e82b";
+            position: absolute;
+            top: 0;
+            left: 30px;
+            font-size: 48px;
+        }
+    }
+}
+.statistics__item-text {
+    color: #fff;
+    font-size: 18px;
+}
+//end statistics

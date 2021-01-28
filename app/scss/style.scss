@@ -1001,7 +1001,6 @@
         padding: 21px 40px;
     }
 }
-
 //end services
 //start feedback
 .feedback {
@@ -1071,3 +1070,117 @@
     border-radius: 28px;
 }
 //end feedback
+//start news
+.news {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #eff1f5;
+}
+.news__title {
+    margin-bottom: 36px;
+}
+.news__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news__text {
+    line-height: 30px;
+    max-width: 671px;
+    margin-bottom: 60px;
+}
+.news__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news__item {
+    width: 361px;
+    border-radius: 4px;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    background-color: #fff;
+    &-bg {
+        background-color: #7385cd;
+        margin-bottom: 30px;
+        width: 361px;
+        height: 230px;
+    }
+    &-wrapper {
+        padding: 0 40px 0 30px;
+    }
+    &-title {
+        color: #000000;
+        font-size: 22px;
+        @include f700;
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+    &-text {
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    &-line {
+        width: 361px;
+        height: 1px;
+        background-color: #ececec;
+    }
+    &-box {
+        padding: 23px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-date {
+        color: #999999;
+        font-size: 15px;
+        padding-left: 24px;
+        position: relative;
+        padding-right: 47px;
+        &:after {
+            content: "";
+            width: 1px;
+            height: 40px;
+            background-color: #ececec;
+            position: absolute;
+            right: 0;
+            top: -8px;
+        }
+        &::before {
+            content: "\e864";
+            position: absolute;
+            left: 0;
+            color: #0674ec;
+            font-size: 15px;
+        }
+    }
+    &-comment {
+        color: #7e7e7e;
+        font-size: 15px;
+        padding-left: 23px;
+        position: relative;
+        margin-right: 30px;
+        &::before {
+            content: "\e83f";
+            position: absolute;
+            left: 0;
+        }
+    }
+    &-viewed {
+        color: #7e7e7e;
+        font-size: 15px;
+        padding-left: 23px;
+        position: relative;
+        &::before {
+            content: "\e81b";
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+.bg--green {
+    background-color: #90bbc4;
+}
+.bg--color {
+    background-color: #ac7fb8;
+}
+//end news

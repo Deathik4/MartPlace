@@ -1206,3 +1206,29 @@
     }
 }
 //end warranty
+//start ready
+.ready {
+    background-image: linear-gradient(to left, #0d3ef2 0%, #7221a0 100%);
+    opacity: 0.9;
+    height: 400px;
+    text-align: center;
+    padding: 110px 0;
+    &__title {
+        color: #ffffff;
+        font-size: 36px;
+        margin-bottom: 23px;
+    }
+    &__text {
+        color: #e7e7e7;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    &__btn {
+        color: #0674ec;
+        padding: 20px 44px;
+        background-color: #ffffff;
+        border-radius: 28px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+//end ready

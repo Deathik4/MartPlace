@@ -315,7 +315,8 @@
     background-color: #eff1f5;
     padding: 120px 0px;
 }
-.week__inner {
+.week__inner,
+.follower__inner {
     display: flex;
     justify-content: space-between;
     border-radius: 4px;
@@ -324,7 +325,8 @@
     align-items: center;
     margin-bottom: 50px;
 }
-.week__title {
+.week__title,
+.follower__title {
     padding: 32px 0px 32px 30px;
 }
 .week__arrows {
@@ -339,6 +341,7 @@
     margin-right: 30px;
     &-left {
         position: relative;
+        cursor: pointer;
         &::before {
             content: "\e875";
             position: absolute;
@@ -349,6 +352,7 @@
     }
     &-right {
         position: relative;
+        cursor: pointer;
         &::after {
             content: "\e876";
             position: absolute;
@@ -359,6 +363,7 @@
     }
 }
 .week__content {
+    position: relative;
 }
 .week__item {
     display: flex;
@@ -377,7 +382,7 @@
         min-width: 0;
     }
     &-box {
-        max-width: 585px;
+        width: 585px;
         padding-top: 50px;
         padding-right: 50px;
         padding-left: 50px;
@@ -488,9 +493,6 @@
     display: inline-block;
     padding-left: 13px;
 }
-.week__slider {
-    min-width: 0;
-}
 //end week
 //start release
 
@@ -551,7 +553,8 @@
         }
     }
 }
-.release__items {
+.release__items,
+.follower__items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -748,4 +751,46 @@
     margin-top: 36px;
     border: none;
     outline: none;
+}
+//end release
+//start follower
+.follower {
+    background-color: #eff1f5;
+    padding: 120px 0;
+}
+.follower__arrows {
+    width: 110px;
+    height: 45px;
+    border-radius: 23px;
+    background-color: #0674ec;
+    color: #ffffff;
+    font-family: "Linearicons - Free";
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 30px;
+    &-left {
+        position: relative;
+        &::before {
+            content: "\e875";
+            position: absolute;
+            top: 15px;
+            left: 25px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+    &-right {
+        position: relative;
+        &::after {
+            content: "\e876";
+            position: absolute;
+            top: 15px;
+            right: -85px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}
+.follower__items {
+    min-width: 0;
 }

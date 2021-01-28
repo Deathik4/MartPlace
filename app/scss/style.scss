@@ -1184,3 +1184,25 @@
     background-color: #ac7fb8;
 }
 //end news
+//start warranty
+.warranty {
+    padding: 60px 0;
+}
+.warranty__items {
+    display: flex;
+    justify-content: space-between;
+}
+.warranty__item-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.warranty__item-img {
+    height: 120px;
+}
+.title--color {
+    span {
+        color: #7347c1;
+    }
+}
+//end warranty

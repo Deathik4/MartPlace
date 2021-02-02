@@ -184,10 +184,11 @@
     position: absolute;
     left: 9px;
 }
-.lnr-chart-bars:before {
+.lnr-chart:before {
     content: "\e843";
     position: absolute;
     left: 9px;
+    font-family: "Linearicons-Free";
 }
 .lnr-cloud-upload:before {
     content: "\e80a";
@@ -1532,10 +1533,12 @@
         font-size: 48px;
         text-align: left;
     }
+
     &-license {
         color: #0674ec;
         font-size: 60px;
         margin-bottom: 50px;
+
         &--magic {
             color: #7f4ec2;
         }

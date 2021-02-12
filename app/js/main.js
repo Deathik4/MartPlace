@@ -30,5 +30,17 @@ $(function () {
         prefix: "$"
     });
 
+    $('.menu__btn').on('click', function () {
+        $('.menu__list').slideToggle();
+    });
+
+    $('.drop-down').on('click', function () {
+        $(this).children('.drop-down__list').toggleClass('active');
+        $(this).children('.drop-down__link').toggleClass('active');
+    });
+    $('.header__btn-menu').on('click', function () {
+        $('.use__box').toggleClass('active');
+    });
+
     var mixer = mixitup('.release__items');
 });

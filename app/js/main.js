@@ -41,6 +41,22 @@ $(function () {
     $('.header__btn-menu').on('click', function () {
         $('.use__box').toggleClass('active');
     });
+    $('.icon-th-list').on('click', function () {
+        $('.catalog__item').addClass('list');
+        $('.catalog__item-list').addClass('list');
+        $('.breadcrumbs__list-list').addClass('list');
+        $('.breadcrumbs__list').addClass('list');
+        $('.icon-th-list').addClass('active');
+        $('.icon-th-large').removeClass('active');
+    });
+    $('.icon-th-large').on('click', function () {
+        $('.catalog__item').removeClass('list');
+        $('.catalog__item-list').removeClass('list');
+        $('.breadcrumbs__list-list').removeClass('list');
+        $('.breadcrumbs__list').removeClass('list');
+        $('.icon-th-large').addClass('active');
+        $('.icon-th-list').removeClass('active');
+    });
 
     var mixer = mixitup('.release__items');
 });

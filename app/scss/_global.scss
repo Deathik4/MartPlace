@@ -59,7 +59,8 @@ body {
 .breadcrumbs {
     &__inner {
     }
-    &__list {
+    &__list,
+    &__list-list {
         display: flex;
         justify-content: center;
         font-size: 15px;
@@ -76,6 +77,17 @@ body {
         }
         span {
             color: #bfcad7;
+        }
+    }
+    &__list-list {
+        display: none;
+        &.list {
+            display: flex;
+        }
+    }
+    &__list {
+        &.list {
+            display: none;
         }
     }
 }

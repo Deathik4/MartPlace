@@ -2149,6 +2149,9 @@
             &:last-child {
                 margin-right: 0;
             }
+            &.active {
+                color: $blue;
+            }
         }
     }
     button {
@@ -2345,6 +2348,9 @@
     justify-content: space-between;
 }
 .catalog__item {
+    &.list {
+        display: none;
+    }
     width: 262px;
     background-color: #ffffff;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
@@ -2355,6 +2361,7 @@
         height: 160px;
         border-radius: 4px 4px 0px 0px;
         background-repeat: no-repeat;
+        background-image: url(../images/content/product_item.jpg);
     }
     &-content {
         padding: 18px 19px;
@@ -2431,6 +2438,133 @@
             height: 16px;
             background-image: url(../images/icons/week-icon-1.svg);
         }
+    }
+}
+.catalog__item-list {
+    display: none;
+    &.list {
+        width: 847px;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-radius: 4px;
+        display: flex;
+        height: 210px;
+        margin-bottom: 30px;
+    }
+    .catalog__list-img {
+        background-image: url(../images/content/catalog_list.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 230px;
+        height: 210px;
+        border-radius: 4px 0px 0px 4px;
+        width: 100%;
+        display: block;
+        margin-right: 19px;
+    }
+    .catalog__list-wrapper {
+        padding: 29px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .catalog__list-name {
+        padding-right: 30px;
+        border-right: 1px solid #ececec;
+    }
+    .catalog__list-author {
+        width: 190px;
+        margin-left: 20px;
+        margin-right: 52px;
+    }
+    .catalog__list-title {
+        font-size: 18px;
+        @include f500;
+        color: #000;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .catalog__list-text {
+        width: 210px;
+        line-height: 30px;
+        margin-bottom: 16px;
+    }
+    .catalog__list-category {
+        font-size: 15px;
+        color: #7347c1;
+        padding-left: 21px;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            background-image: url(../images/icons/week-icon-1.svg);
+        }
+    }
+    .catalog__list-user {
+        font-size: 15px;
+        color: #000;
+        padding-left: 35px;
+        position: relative;
+        margin-bottom: 33px;
+        &:before {
+            content: "";
+            width: 28px;
+            height: 28px;
+            background-color: #7347c1;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: -3px;
+        }
+    }
+    .catalog__list-heart {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 17px;
+        &::before {
+            content: "\e813";
+            font-family: "Linearicons-Free";
+            position: absolute;
+            font-size: 15px;
+            color: #7f4ec2;
+            top: 0;
+            left: 0;
+        }
+    }
+    .catalog__list-comment {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 16px;
+        &::before {
+            content: "\e83f";
+            font-family: "Linearicons-Free";
+            position: absolute;
+            font-size: 15px;
+            color: #7f4ec2;
+            top: 0;
+            left: 0;
+        }
+    }
+    .jq-ry-container {
+        padding: 0;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .jq-ry-container > .jq-ry-group-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+    .catalog__list-prices {
+        margin-bottom: 30px;
+    }
+    .catalog__list-price {
+        text-align: center;
+        border-left: 1px solid #ececec;
+        margin-right: 30px;
+        padding: 40px 0 40px 20px;
     }
 }
 .pagination {

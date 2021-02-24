@@ -353,6 +353,16 @@
     }
 }
 @media (max-width: 600px) {
+    .login__box {
+        span {
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+            & + span {
+                margin-left: 0;
+            }
+        }
+    }
     .advantages__item {
         flex-basis: 100%;
     }
@@ -388,6 +398,9 @@
     }
 }
 @media (max-width: 500px) {
+    .login__box {
+        padding: 30px 10px 30px;
+    }
     .thmea {
         h1 {
             font-size: 20px;

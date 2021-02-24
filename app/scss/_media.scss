@@ -1,4 +1,24 @@
 @media (max-width: 1200px) {
+    .filter__inner {
+        display: block;
+        text-align: center;
+    }
+    .filter__title {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .filter__category-filter {
+        padding: 0;
+        position: static;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .select--favorites {
+        margin-left: 0px;
+    }
+    .filter__category {
+        justify-content: center;
+    }
     .product__content {
         margin-right: 0;
     }

@@ -3134,11 +3134,12 @@
     margin: 0 auto;
 }
 .login__top {
-    padding: 60px 0 30px;
+    padding: 60px 65px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid #e8ebf0;
+    text-align: center;
 }
 .login__title {
     font-size: 26px;

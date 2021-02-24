@@ -3134,12 +3134,11 @@
     margin: 0 auto;
 }
 .login__top {
-    padding: 60px 65px 30px;
+    padding: 60px 50px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid #e8ebf0;
-    text-align: center;
 }
 .login__title {
     font-size: 26px;
@@ -3147,11 +3146,16 @@
     margin-bottom: 25px;
 }
 .login__text {
+    line-height: 30px;
+}
+.register__text {
+    text-align: center;
 }
 .login__box {
     padding: 30px 50px 60px;
     span {
         color: #898f96;
+        margin-top: 40px;
         & + span {
             margin-left: 33px;
         }
@@ -3197,7 +3201,6 @@
     }
 }
 .login__btn {
-    margin-bottom: 40px;
     a {
         font-size: 15px;
         @include f500;

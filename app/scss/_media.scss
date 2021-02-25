@@ -64,6 +64,16 @@
     }
 }
 @media (max-width: 1150px) {
+    .plan__items {
+        display: block;
+    }
+    .plan__item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .plan__item-list {
+        text-align: center;
+    }
     .news__item {
         flex-basis: calc(50% - 30px);
         margin-left: 30px;

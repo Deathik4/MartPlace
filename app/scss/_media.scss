@@ -235,6 +235,21 @@
     }
 }
 @media (max-width: 980px) {
+    .guide__item-img {
+        img {
+            width: 100%;
+        }
+        margin-bottom: 20px;
+    }
+    .guide__item {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .guide__item-info {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
     .filter__inner {
         display: block;
     }

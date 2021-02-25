@@ -2718,6 +2718,7 @@
 }
 //end product page
 //start product
+
 .thmea {
     height: 181px;
     padding: 56px 0;
@@ -2729,6 +2730,23 @@
     }
     .breadcrumbs__list {
         justify-content: flex-start;
+    }
+}
+.thema-guide {
+    height: 281px;
+    padding: 70px 0 30px;
+    text-align: center;
+    h1 {
+        margin-bottom: 70px;
+        span {
+            color: #f3f3f8;
+            @include f300;
+            display: block;
+            margin-top: 20px;
+        }
+    }
+    .breadcrumbs__list {
+        justify-content: center;
     }
 }
 .product {
@@ -3214,5 +3232,47 @@
     }
 }
 //end login
+//start guide
+.guide {
+}
+.guide__items {
+}
+.guide__item {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.guide__item-img {
+}
+.guide__item-info {
+    max-width: 450px;
+}
+.guide__info-title {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 40px;
+}
+.guide__info-text {
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.guide__info-btn {
+    color: #fff;
+    padding: 18px 5px;
+    width: 170px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    background-color: $blue;
+    text-align: center;
+}
+.guide-reverse {
+    background-color: #eff1f5;
+}
+.guide__info-btn--white {
+    color: $blue;
+    background-color: #fff;
+}
+//end guide
 
 @import "media";

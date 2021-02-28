@@ -1,4 +1,8 @@
 @media (max-width: 1200px) {
+    .blog_aside-tabs .tab,
+    .blog__aside-tags {
+        text-align: center;
+    }
     .filter__inner {
         display: block;
         text-align: center;
@@ -19,7 +23,8 @@
     .filter__category {
         justify-content: center;
     }
-    .product__content {
+    .product__content,
+    .blog__content {
         margin-right: 0;
     }
     .product__box-bg {
@@ -28,9 +33,6 @@
     .release__item {
         flex-basis: calc(50% - 30px);
         margin-left: 30px;
-    }
-    .release__item-bg {
-        width: 100%;
     }
     .product-page__inner {
         display: block;
@@ -42,24 +44,31 @@
         width: 100%;
         background-size: cover;
     }
-    .product__inner {
+    .product__inner,
+    .blog__inner {
         display: block;
     }
-    .product__box-bg {
+    .product__box-bg,
+    .blog__item,
+    .tab,
+    .product__aside-item,
+    .blog__aside-bottom input,
+    .release__item-bg,
+    .blog__aside-text {
         width: 100%;
     }
-    .product__box-tabs {
+    .blog__item-image {
+        img {
+            width: 100%;
+        }
+    }
+    .product__box-tabs,
+    .blog__form-inner {
         max-width: 100%;
     }
     .tabs {
         display: flex;
         justify-content: space-between;
-        width: 100%;
-    }
-    .tab {
-        width: 100%;
-    }
-    .product__aside-item {
         width: 100%;
     }
 }
@@ -423,6 +432,9 @@
     }
 }
 @media (max-width: 500px) {
+    .blog__item-top {
+        padding: 10px;
+    }
     .login__box {
         padding: 30px 10px 30px;
     }
@@ -561,6 +573,20 @@
     }
 }
 @media (max-width: 380px) {
+    .blog_aside-tabs .tabs {
+        display: block;
+        padding: 10px;
+    }
+    .blog_aside-tabs .tab,
+    .release__item-box {
+        padding: 10px 0;
+    }
+    .blog_aside-tabs .tab {
+        line-height: 1;
+    }
+    .blog__item-title {
+        font-size: 20px;
+    }
     .pagination__list a {
         padding: 13px 14px;
     }
@@ -584,19 +610,14 @@
     .release__item-text {
         margin-bottom: 10px;
     }
-    .release__item-box {
-        padding: 10px 0;
-    }
     .release__item-price {
         margin: 0 9px 0 15px;
     }
-    .release__item-cart {
+    .release__item-cart,
+    .news__item-comment {
         margin-right: 10px;
     }
     .follower__item-inner {
         width: 100%;
-    }
-    .news__item-comment {
-        margin-right: 10px;
     }
 }

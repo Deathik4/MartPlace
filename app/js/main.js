@@ -86,10 +86,10 @@ $(function () {
         $('.license__text--off').addClass('on');
     });
 
-    $('.product__box-tabs .tab').on('click', function (event) {
+    $('.product__box-tabs .tab, .blog_aside-tabs .tab').on('click', function (event) {
         var id = $(this).attr('data-id');
-        $('.product__box-tabs').find('.tab-item').removeClass('active-tab').hide();
-        $('.product__box-tabs .tabs').find('.tab').removeClass('active');
+        $('.product__box-tabs, .blog_aside-tabs').find('.tab-item').removeClass('active-tab').hide();
+        $('.product__box-tabs .tabs, .blog_aside-tabs .tabs').find('.tab').removeClass('active');
         $(this).addClass('active');
         $('#' + id).addClass('active-tab').fadeIn();
         return false;

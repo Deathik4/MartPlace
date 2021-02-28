@@ -565,6 +565,9 @@
     }
 }
 @media (max-width: 460px) {
+    .page404__title {
+        font-size: 27px;
+    }
     .feedback__item-title::after {
         content: "";
     }

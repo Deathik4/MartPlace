@@ -73,7 +73,8 @@
     }
 }
 @media (max-width: 1150px) {
-    .plan__items {
+    .plan__items,
+    .contact__items {
         display: block;
     }
     .plan__item {
@@ -117,7 +118,8 @@
     .week__item-bg {
         max-width: 100%;
     }
-    .week__item-text {
+    .week__item-text,
+    .contact__item {
         width: 100%;
         margin-bottom: 20px;
     }
@@ -313,6 +315,21 @@
     }
 }
 @media (max-width: 780px) {
+    .contact__column {
+        input {
+            width: 100%;
+        }
+        margin: 0 10px 30px 10px;
+    }
+    .contact__column:last-child {
+        margin-right: 10px;
+    }
+    .contact__form textarea {
+        width: 100%;
+    }
+    .contact__box {
+        margin: 0 10px 0 10px;
+    }
     .catalog__item-list.list {
         display: none;
     }
@@ -324,7 +341,8 @@
         width: 100%;
         margin-left: 10px;
     }
-    .services {
+    .services,
+    .contact__columns {
         display: block;
     }
     .header__top-link {

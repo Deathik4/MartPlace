@@ -2740,7 +2740,7 @@
     h1 {
         margin-bottom: 70px;
         span {
-            color: #f3f3f8;
+            color: #bcbce6;
             @include f300;
             display: block;
             margin-top: 20px;
@@ -3289,6 +3289,7 @@
 .top__text {
     max-width: 675px;
     margin: 0 auto 60px;
+    line-height: 30px;
 }
 .plan__items {
     display: flex;
@@ -3673,5 +3674,105 @@
     }
 }
 //end blog
+//start contact
+.contact {
+    background-color: #eff1f5;
+    padding: 120px 0;
+    .top__title {
+        span {
+            color: $blue;
+            margin-left: 10px;
+        }
+    }
+}
+.contact__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.contact__item {
+    background-color: #fff;
+    padding: 50px 65px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    width: 360px;
+    text-align: center;
+    .lnr-map-marker::before,
+    .lnr-phone::before,
+    .lnr-inbox::before {
+        font-size: 48px;
+        color: $blue;
+    }
+}
+
+.contact__item-title {
+    margin-top: 53px;
+    font-size: 20px;
+    @include f500;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.contact__wrapper {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+}
+.contact__title {
+    font-size: 24px;
+    line-height: 42px;
+    color: #000000;
+    padding: 60px 0 30px;
+    border-bottom: 1px solid #e8ebf0;
+    text-align: center;
+}
+.contact__form {
+    padding: 40px 0 60px;
+    text-align: center;
+    textarea {
+        width: 750px;
+        height: 133px;
+        border: 1px solid #e7e7e7;
+        padding: 20px 10px 20px 50px;
+        outline: none;
+        resize: none;
+    }
+    button {
+        color: #ffffff;
+        width: 170px;
+        height: 50px;
+        background-color: #0674ec;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 25px;
+        margin-top: 30px;
+        outline: none;
+        border: none;
+    }
+}
+.contact__columns {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.contact__column {
+    margin-right: 30px;
+    &:last-child {
+        margin-right: 0;
+    }
+    input {
+        display: block;
+        margin-bottom: 30px;
+        width: 361px;
+        height: 50px;
+        border: 1px solid #e7e7e7;
+        padding: 0 10px 0 50px;
+        outline: none;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+//end contact
 
 @import "media";
